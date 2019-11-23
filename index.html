@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Pharmacy Manager</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: sans-serif;
+			}
+			main{
+				height: 100vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			main table{
+				width: 60%;
+				background: white;
+				border-radius: 4px;
+				background: white;
+			}
+			main table tr td{
+				padding: 0px 0px;
+			}
+			main table tr td h2, main table tr td p{
+				padding: 0px 20px;
+				color: white;
+				text-shadow: 2px 2px 2px black;
+			}
+			ul{
+				list-style-type: none;
+				height: 300px; /*Height provided only for proper display, this is
+				a bit layout stuff*/
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 30px 0px;
+			}
+			ul li a{
+				text-decoration: none;
+				color: white;
+				display: block;
+				padding: 35px 30px;
+				transition: 0.1s ease;
+				border-top: 1px solid #AFA7A7;
+				border-bottom: 1px solid #AFA7A7;
+			}
+			ul li a:hover{
+				background: #0554FF;
+			}
+			.left{
+				background: linear-gradient(to right, red, gold);
+				width: 50%;
+			}
+			.right{
+				height: 100%;
+				background: red; /*generally invisible*/
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<table>
+				<tr>
+					<td align="center" bgcolor="#3ED500" colspan="2" style="padding: 20px 0px;">
+						<h1 style="text-shadow: 2px 2px 2px black; color: white;">Pharmacy Manager</h1>
+					</td>
+				</tr>
+				<tr>
+					<td class="left" align="center">
+						<img src="icon.ico">
+					</td>
+					<td class="right">
+						<div class="buttons">
+							<ul>
+								<div class="btn-container" style="background: #2C2A2A;">
+									<li><a href="add_medicine.php">Add Medicine</a></li>
+									<li><a href="add_stock.php">Add Stock</a></li>
+									<li><a href="buy_medicine.php">Buy Medicine</a></li>
+									<li><a href="delete_medicine.php">Delete Medicine</a></li>
+								</div>
+							</ul>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</main>
+	</body>
+</html>
