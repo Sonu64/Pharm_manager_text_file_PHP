@@ -8,7 +8,10 @@ There are 4 options - Add a Medicine, where a .txt file with the name of the med
                     - Buy a medicine, where a bill is shown on the right, when the buying form is filled up and submitted. Automatic 
                     update occurs in the text file acting as the storage.
                     - Delete a medicine, where the .txt file in the name of the medicine is deleted.
-                    
+
+If any error occurs, for example if the user is tryes to add stock to medicine which is not in main stock, i.e., the file is not created by 
+that name, Error of "Medicine not found in main stock !" is shown in the page.
+
 SPECIAL NOTES :-
 NO SIGN-IN and SIGN-UP SYSTEMS ARE AVAILABLE, ONLY THE COMPUTER USER WITH A WEB SERVER INSTALLED WILL BE ABLE TO RUN IT, THERE IS NO
 PROPER SECURITY SYSTEM.
